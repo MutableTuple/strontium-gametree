@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For Firefox */
+  * {
+    scrollbar-width: none; /* Hide the scrollbar */
+    scrollbar-color: transparent transparent; /* Transparent scrollbar */
+  }
+
+  /* Optional: Ensure the content is still scrollable */
+  html,
+  body {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    overflow: hidden; /* If you want to prevent scrolling */
+    scroll-behavior: smooth;
+  }
+  .custom-shadow-sm {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  }
+  .custom-shadow-md {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+  .custom-shadow-1 {
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
+}
